@@ -36,10 +36,10 @@ export default class Main extends React.Component {
     }
   
   render() {
-      let notes = this.state.noteArray.map((val, key) => {
-          return <Note key={key} val={val} deleteMethod={() => this.deleteNote(key)} />
-      })
-        return (
+    let notes = this.state.noteArray.map((val, key) => {
+        return <Note key={key} val={val} deleteMethod={() => this.deleteNote(key)} />
+    })
+    return (
         <View style={styles.container}>
             <View style={styles.header}>
                 <Text style={styles.headerText}>* Noter *</Text>
